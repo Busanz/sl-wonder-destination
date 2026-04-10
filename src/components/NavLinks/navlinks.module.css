@@ -1,0 +1,13 @@
+.navlinks {
+  display: flex;
+}
+.navlinks_footer {
+  display: flex;
+}
+.navlink {
+  font-size: 1.1rem;
+  font-weight: 200;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #f0ffff;
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.footer {
+  background-color: #0d0640;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.footer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f0ffff;
+  padding: 3rem 0;
+}
+.footer_slogen {
+  font-family: 'Quicksand', sans-serif;
+  color: #abf8f8;
+  font-weight: 200;
+}
+.footer_description {
+  font-size: 1.1rem;
+  font-weight: 100;
+  max-width: 800px;
+}
+.footer_copyright {
+  color: #a7a7a3;
+  font-weight: 100;
+  font-size: 0.8rem;
+  padding-top: 2rem;
+}

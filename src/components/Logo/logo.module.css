@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+.logo {
+  font-family: 'Yeseva One', serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #f0ffff;
+}
+.logo_footer {
+  font-size: 2.8rem;
+  padding-top: 1rem;
+}
+span {
+  color: #726bff;
+}
