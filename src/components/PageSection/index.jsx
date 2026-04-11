@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import ImgMediaCard from './MUI/ImgMediaCard';
+import ImgMediaCard from '../MUI/ImgMediaCard';
 
 const PageSection = ({ pageData }) => {
   return (

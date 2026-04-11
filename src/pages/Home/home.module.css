@@ -3,5 +3,14 @@
   flex-direction: column;
   padding: 1rem 2rem;
   align-items: center;
-  background-color: #d7fffa;
+  /* background-color: #d7fffa; */
+}
+.categorie {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  align-items: center;
+  background-color: #ebeafd;
+  margin: 2rem 5rem 4rem;
+  border-radius: 8px;
 }

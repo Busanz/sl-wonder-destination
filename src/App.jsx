@@ -6,6 +6,7 @@ import Heritage from './pages/Heritage';
 import Wildlife from './pages/Wildlife';
 import About from './pages/About';
 import Layout from './pages/Layout';
+import Destination from './pages/Destination';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/heritage" element={<Heritage />} />
           <Route path="/wildlife" element={<Wildlife />} />
           <Route path="/about" element={<About />} />
+          <Route path="/:type/:id" element={<Destination />} />
         </Route>
       </Routes>
     </>

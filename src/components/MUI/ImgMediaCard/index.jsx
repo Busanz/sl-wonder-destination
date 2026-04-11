@@ -5,10 +5,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const ImgMediaCard = ({ image_url, name, description }) => {
+const ImgMediaCard = ({ id, type, image_url, name, description }) => {
   const [imageError, setImageError] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -30,8 +31,9 @@ const ImgMediaCard = ({ image_url, name, description }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Explore More</Button>
+        <Button size="small" onClick={() => navigate(`/${type}/${id}`)}>
+          Explore More
+        </Button>
       </CardActions>
     </Card>
   );
