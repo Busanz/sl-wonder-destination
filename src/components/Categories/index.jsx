@@ -8,7 +8,7 @@ const Categories = ({ categorie }) => {
   return (
     <Box
       className={styles.categories}
-      sx={{ p: 3, mt: 5, borderRadius: '6px' }}
+      sx={{ p: 1, mt: 5, borderRadius: '6px' }}
     >
       {Array.isArray(data) &&
         data

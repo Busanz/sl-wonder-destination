@@ -26,7 +26,7 @@ const Home = () => {
               <>
                 <Button
                   sx={{ px: 5, py: '10px', mt: 3 }}
-                  variant="contained"
+                  variant="outlined"
                   onClick={() => buttonNavigation(`/${section.id}`)}
                 >
                   Explore more
