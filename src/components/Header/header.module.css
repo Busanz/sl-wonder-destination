@@ -2,7 +2,11 @@
   align-items: center;
   background-color: #0d0640;
   display: flex;
+  position: sticky;
   justify-content: space-between;
-
   padding: 1rem 4rem;
+  max-width: 1800px;
+  margin: auto;
+  top: 0;
+  z-index: 400;
 }

@@ -1,18 +1,19 @@
 .about {
   display: flex;
   padding: 3rem 4rem;
+  justify-content: space-between;
 }
-p {
+.about_description {
   text-align: left;
   padding-right: 2rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .about {
     display: block;
     padding: 1rem 1.2rem;
   }
-  img {
+  .about_image {
     margin-top: 2rem;
   }
 }

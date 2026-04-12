@@ -25,7 +25,14 @@ const Home = () => {
             {section.id !== 'home' && (
               <>
                 <Button
-                  sx={{ px: 5, py: '10px', mt: 3 }}
+                  sx={{
+                    px: 5,
+                    py: '10px',
+                    mt: { xs: 3, sm: 4, md: 5 },
+                    mb: { xs: 3, sm: 4, md: 5 },
+                    mr: { xs: 'auto', sm: 'auto', md: 0 },
+                    width: '200px',
+                  }}
                   variant="outlined"
                   onClick={() => buttonNavigation(`/${section.id}`)}
                 >

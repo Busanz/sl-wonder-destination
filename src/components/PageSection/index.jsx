@@ -26,14 +26,18 @@ const PageSection = ({ pageData }) => {
               <Box
                 key={index}
                 sx={{
-                  width: '100%',
                   mt: 4,
+                  mx: 2,
                 }}
               >
                 <Typography
                   variant="h4"
                   gutterBottom
-                  sx={{ textAlign: 'center', fontWeight: 100 }}
+                  sx={{
+                    textAlign: { sm: 'left', md: 'center' },
+                    fontSize: { xs: '1.6rem', sm: '1.7rem', md: '2rem' },
+                    fontWeight: 100,
+                  }}
                 >
                   {item.title}
                 </Typography>
@@ -42,10 +46,10 @@ const PageSection = ({ pageData }) => {
                   gutterBottom
                   sx={{
                     width: '100%',
-                    mx: 'auto',
-                    mt: 4,
+                    mx: { sm: 0, md: 'auto' },
+                    mt: { sm: 2, md: 4 },
                     fontWeight: 200,
-                    fontSize: '1.18rem',
+                    fontSize: { xs: '1rem', sm: '1.05rem', md: '1.18rem' },
                   }}
                 >
                   {item.description}
@@ -53,15 +57,17 @@ const PageSection = ({ pageData }) => {
               </Box>
             ))}
         <Container
-          maxWidth="md"
+          maxWidth="lg"
           sx={{
             p: 3,
             mt: 5,
+            mb: 4,
             borderRadius: '6px',
             display: 'flex',
             gap: 3,
             flexWrap: 'wrap',
-            justifyContent: 'center',
+            justifyContent: { xs: 'left', sm: 'left', md: 'center' },
+            bgcolor: '#ebeafd',
           }}
         >
           {Array.isArray(pageData) &&

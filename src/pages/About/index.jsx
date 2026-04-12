@@ -10,7 +10,7 @@ const About = () => {
         .map((item, index) => (
           <div key={index}>
             <h2>{item.title}</h2>
-            <p>{item.description}</p>
+            <p className={styles.about_description}>{item.description}</p>
           </div>
         ))}
       <div>
@@ -19,6 +19,7 @@ const About = () => {
           alt={'Ella train journey'}
           height="100%"
           width="100%"
+          className={styles.about_image}
         />
       </div>
     </div>

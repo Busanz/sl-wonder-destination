@@ -11,7 +11,13 @@ const ImgMediaCard = ({ id, type, image_url, name, description }) => {
   const [imageError, setImageError] = useState(false);
   const navigate = useNavigate();
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card
+      sx={{
+        maxWidth: { xs: 'none', sm: 550, md: 320, lg: 320, xl: 330 },
+        width: '100%',
+        mt: 0,
+      }}
+    >
       <CardMedia
         component="img"
         alt={name}
@@ -20,7 +26,12 @@ const ImgMediaCard = ({ id, type, image_url, name, description }) => {
         onError={() => setImageError(true)}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          sx={{ fontWeight: 100, fontSize: 22 }}
+        >
           {name}
         </Typography>
         <Typography

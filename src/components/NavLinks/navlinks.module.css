@@ -3,6 +3,7 @@
 }
 .navlinks_footer {
   display: flex;
+  flex-direction: row;
 }
 .navlink {
   font-size: 1.1rem;
@@ -10,4 +11,22 @@
   padding: 10px 15px;
   text-decoration: none;
   color: #f0ffff;
+}
+@media screen and (max-width: 599px) {
+  .navlinks_footer {
+    margin-right: auto;
+    flex-direction: column;
+  }
+  .navlinks_footer .navlink {
+    margin-left: -1rem;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .navlinks_footer {
+    margin-right: auto;
+  }
+  .navlinks_footer .navlink {
+    margin-left: -1rem;
+  }
 }
