@@ -46,7 +46,7 @@ const Destination = () => {
               </Typography>
 
               <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
-                <Chip label={`⭐ ${destination.rating}`} />
+                <Chip label={`✅ ${destination.rating}`} />
                 <Chip label={`${destination.days} days`} />
                 <Chip label={`Cost level: ${destination.cost}`} />
                 <Chip label={`Entrance fee: ${destination.entrance_fee_usd}`} />
