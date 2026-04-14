@@ -1,4 +1,62 @@
-Add project plan
+Project Plan
 
-stop scrolling
+1. Understanding the Assignment
 
+I began by reviewing the lecture materials to build a clear understanding of the key concepts required for the assignment.
+
+2. Idea Exploration
+
+Next, I explored several possible project ideas, including:
+
+* Movie/TV show platform
+* Recipe and cooking website
+* Accommodation selling platform
+* Travel destination website
+* Games introduction platform with rules
+* University website showcasing courses
+
+After evaluating these options, I focused on selecting a concept that would allow me to demonstrate both design and development skills effectively.
+
+3. Resource Research
+
+Based on the selected ideas, I researched available resources, particularly free APIs that could support the project. However, due to limitations in suitable APIs for my chosen concept, I decided to create my own dataset.
+
+4. Backend Decision
+
+To manage and serve my custom data, I explored backend solutions and chose Supabase.
+I reviewed documentation and watched tutorials to understand its functionality. After some experimentation, I felt confident using Supabase to create and manage my own API.
+
+5. Final Project Selection
+
+I decided to develop a Travel Guidance Website, as it aligns well with my interests and allows me to showcase UX design, data handling, and frontend development skills.
+
+To support this, I generated a dataset using AI and integrated it into Supabase.
+
+6. Technology Stack
+
+Due to time constraints, I focused on tools that enable fast and efficient development:
+
+Material UI – for pre-built UI components
+Framer Motion – for interactive animations
+
+These tools helped speed up development while maintaining a modern UI.
+
+7. Design Process
+
+Before coding, I planned the design by:
+
+Sketching rough wireframes on paper
+Identifying required pages and components
+Creating a simple mind map to visualize the relationships between components and pages
+
+This helped establish a clear structure for the application.
+
+8. Development
+
+After completing the planning and design phases, I proceeded with the implementation of the project, focusing on building reusable components and integrating data from Supabase.
+
+Conclusion
+
+This project follows a structured approach, starting from concept exploration to implementation. It combines UX design thinking, frontend development, and backend integration, while also demonstrating adaptability in overcoming resource limitations by creating a custom dataset.
+
+(Note: I was not able to add framer motion with the time limitation)
