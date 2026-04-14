@@ -20,17 +20,17 @@ const Destination = () => {
   const highlights = destination?.highlights
     ? destination.highlights.replace(/[{}"]/g, '').split(',')
     : [];
-  console.log(destination);
   return (
     destination && (
       <>
         <Container maxWidth="md" sx={{ my: 5 }}>
-          <Card>
+          <Card sx={{ my: 5, px: 2 }}>
             <CardMedia
               component="img"
               height="300"
               image={destination.image_url || 'default-fallback-image.png'}
               alt={destination.name}
+              sx={{ mt: 2 }}
             />
             <CardContent>
               <Typography variant="h4" gutterBottom>
@@ -45,7 +45,11 @@ const Destination = () => {
                 {destination.province} province 🟢 {destination.type}
               </Typography>
 
-              <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
+              <Stack
+                direction={{ xs: 'column', sm: 'row' }}
+                spacing={2}
+                sx={{ mt: 2, maxWidth: 200 }}
+              >
                 <Chip label={`✅ ${destination.rating}`} />
                 <Chip label={`${destination.days} days`} />
                 <Chip label={`Cost level: ${destination.cost}`} />
@@ -71,13 +75,26 @@ const Destination = () => {
               <Box sx={{ mt: 3 }}>
                 <Typography variant="h6">Highlights</Typography>
                 <Stack
-                  direction="row"
-                  spacing={1}
-                  sx={{ mt: 1, mb: 3, flexwrap: 'wrap', textalign: 'left' }}
+                  direction={{ xs: 'column', sm: 'row' }}
+                  spacing={{ xs: 1, sm: 1.5, md: 2 }}
+                  sx={{
+                    mt: 1,
+                    mb: 3,
+                    flexWrap: 'wrap',
+                    gap: { xs: 0.5, sm: 1 },
+                  }}
                 >
                   {Array.isArray(highlights) &&
                     highlights.map((item, index) => (
-                      <Chip variant="outlined" key={index} label={item} />
+                      <Chip
+                        variant="outlined"
+                        key={index}
+                        label={item}
+                        sx={{
+                          p: { xs: 1, sm: 1.5 },
+                          fontSize: { xs: '0.75rem', sm: '0.875rem' },
+                        }}
+                      />
                     ))}
                 </Stack>
               </Box>

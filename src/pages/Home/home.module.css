@@ -17,13 +17,10 @@
   padding: 1rem 2rem 4rem 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1800px) {
+  .categorie,
   .home {
-    margin: 2rem 2rem 4rem 2rem;
-    padding: 0.5rem;
-  }
-  .categorie {
-    margin: 2rem 2rem 4rem 2rem;
+    margin: 2rem 3rem 4rem 3rem;
   }
 }
 @media screen and (max-width: 900px) {
@@ -35,9 +32,12 @@
     margin: 2rem 3rem 4rem 3rem;
   }
 }
-@media screen and (max-width: 1800px) {
-  .categorie,
+@media screen and (max-width: 600px) {
   .home {
-    margin: 2rem 3rem 4rem 3rem;
+    margin: 2rem 1rem 4rem 1rem;
+    padding: 0.5rem;
+  }
+  .categorie {
+    margin: 2rem 1rem 4rem 1rem;
   }
 }

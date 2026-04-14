@@ -11,6 +11,16 @@
   padding: 10px 15px;
   text-decoration: none;
   color: #f0ffff;
+  cursor: pointer;
+}
+.navlink:hover {
+  color: #c1fdfd;
+}
+.navlinks_btnClose {
+  display: none;
+}
+.active_navlink {
+  color: aqua;
 }
 @media screen and (max-width: 599px) {
   .navlinks_footer {
@@ -28,5 +38,32 @@
   }
   .navlinks_footer .navlink {
     margin-left: -1rem;
+  }
+  .navlinks {
+    display: none;
+  }
+  .mobile_active.navlinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 3rem 2rem;
+    background-color: #0d0640f5;
+    width: 100vw;
+    height: 80vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .mobile_active .navlink {
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  .navlinks_btnClose {
+    display: block;
+    align-items: end;
+    padding-bottom: 3rem;
+    margin-right: 5rem;
+    margin-left: auto;
   }
 }

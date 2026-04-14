@@ -2,14 +2,11 @@ import Box from '@mui/material/Box';
 import ImgMediaCard from '../MUI/ImgMediaCard';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-// import Card from '@mui/material/Card';
-// import CardContent from '@mui/material/CardContent';
+
 import { categoriesHeader } from '../../data/data';
 
 const PageSection = ({ pageData }) => {
   if (!pageData || pageData.length === 0) return null;
-
-  console.log(pageData[0].type);
   return (
     <>
       <Box
@@ -17,6 +14,7 @@ const PageSection = ({ pageData }) => {
           display: 'flex',
           justifyContent: 'center',
           flexDirection: 'column',
+          mx: { xs: 2, sm: 4, md: 4, lg: 4 },
         }}
       >
         {Array.isArray(pageData) &&
@@ -27,7 +25,7 @@ const PageSection = ({ pageData }) => {
                 key={index}
                 sx={{
                   mt: 4,
-                  mx: 2,
+                  mx: { sx: 0, sm: 0 },
                 }}
               >
                 <Typography

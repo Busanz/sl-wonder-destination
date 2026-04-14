@@ -2,5 +2,8 @@ Add project plan
 
 
 Back button => useNavigation
-Responsive
-Mobile Navigation
+stop scrolling
+favicon
+
+
+Animation framer motion

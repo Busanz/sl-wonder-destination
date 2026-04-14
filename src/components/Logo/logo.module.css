@@ -12,6 +12,14 @@
 span {
   color: #726bff;
 }
+@media screen and (max-width: 599px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+  span {
+    display: block;
+  }
+}
 
 @media screen and (max-width: 899px) {
   .logo_footer {
