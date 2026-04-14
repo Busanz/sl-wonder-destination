@@ -11,10 +11,11 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const root = document.querySelector('body');
+    const bodyEle = document.querySelector('body');
+
     isMobileHeader
-      ? (root.style.overflow = 'hidden')
-      : (root.style.overflow = 'auto');
+      ? (bodyEle.style.overflow = 'hidden')
+      : (bodyEle.style.overflow = 'auto');
   }, [isMobileHeader]);
 
   return (
