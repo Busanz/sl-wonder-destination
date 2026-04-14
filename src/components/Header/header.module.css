@@ -3,14 +3,12 @@
   background-color: #0d0640;
   display: flex;
   position: sticky;
-  position: relative;
   justify-content: space-between;
   padding: 1rem 4rem;
   max-width: 1800px;
   margin: auto;
   top: 0;
   z-index: 400;
-  position: relative;
 }
 .mobile_nav_icon {
   display: none;

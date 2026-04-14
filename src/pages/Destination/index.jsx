@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
+import useTop from '../../hooks/useTop';
 import {
   Container,
   Card,
@@ -12,6 +13,7 @@ import {
 } from '@mui/material';
 
 const Destination = () => {
+  useTop();
   const { type, id } = useParams();
   const destinationData = useFetch(type);
 

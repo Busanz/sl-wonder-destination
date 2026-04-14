@@ -1,9 +1,4 @@
 Add project plan
 
-
-Back button => useNavigation
 stop scrolling
-favicon
 
-
-Animation framer motion

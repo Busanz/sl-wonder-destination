@@ -1,3 +1,4 @@
+import useTop from '../../hooks/useTop';
 import Box from '@mui/material/Box';
 import ImgMediaCard from '../MUI/ImgMediaCard';
 import Container from '@mui/material/Container';
@@ -6,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import { categoriesHeader } from '../../data/data';
 
 const PageSection = ({ pageData }) => {
+  useTop();
   if (!pageData || pageData.length === 0) return null;
   return (
     <>

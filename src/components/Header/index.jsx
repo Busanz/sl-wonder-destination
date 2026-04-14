@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './header.module.css';
 import Logo from '../Logo';
 import NavLinks from '../NavLinks';
+// import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 const Header = () => {
   const [isMobileHeader, setIsMobileHeader] = useState(false);
@@ -9,6 +10,11 @@ const Header = () => {
   const handleClick = () => {
     setIsMobileHeader(!isMobileHeader);
   };
+  // isMobileHeader ? disableBodyScroll(document) : enableBodyScroll(document);
+  useEffect(() => {
+    const root = document.querySelector('#root');
+    isMobileHeader ? (root.style.overflow = 'hidden') : '';
+  }, [isMobileHeader]);
 
   return (
     <nav className={styles.header}>

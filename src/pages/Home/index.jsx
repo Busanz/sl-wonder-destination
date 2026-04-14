@@ -1,11 +1,15 @@
+// import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Categories from '../../components/Categories';
+import useTop from '../../hooks/useTop';
 import { categoriesHeader } from '../../data/data';
+import Categories from '../../components/Categories';
 import styles from './home.module.css';
 import Button from '@mui/material/Button';
 
 const Home = () => {
   const buttonNavigation = useNavigate();
+  useTop();
+
   return (
     <>
       {categoriesHeader
